@@ -1,0 +1,137 @@
+body {
+  color: white;
+}
+
+.category {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #7f8c8d;
+}
+
+.category h2 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.category .tittle1, .category .tittle2, .category .tittle3, .category .tittle4, .category .tittle5 {
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+}
+
+.category .tittle1:hover .stick .first-anim, .category .tittle2:hover .stick .first-anim, .category .tittle3:hover .stick .first-anim, .category .tittle4:hover .stick .first-anim, .category .tittle5:hover .stick .first-anim {
+  left: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.category .tittle1:hover .stick .second-anim, .category .tittle2:hover .stick .second-anim, .category .tittle3:hover .stick .second-anim, .category .tittle4:hover .stick .second-anim, .category .tittle5:hover .stick .second-anim {
+  right: 0;
+}
+
+.category .tittle1:hover .stick .last-anim, .category .tittle2:hover .stick .last-anim, .category .tittle3:hover .stick .last-anim, .category .tittle4:hover .stick .last-anim, .category .tittle5:hover .stick .last-anim {
+  right: 105%;
+}
+
+.category .tittle1 .stick, .category .tittle2 .stick, .category .tittle3 .stick, .category .tittle4 .stick, .category .tittle5 .stick {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+}
+
+.category .tittle1 .stick .first-anim, .category .tittle2 .stick .first-anim, .category .tittle3 .stick .first-anim, .category .tittle4 .stick .first-anim, .category .tittle5 .stick .first-anim {
+  position: absolute;
+  width: 0;
+  height: 5px;
+  left: -105%;
+}
+
+.category .tittle1 .stick .second-anim, .category .tittle2 .stick .second-anim, .category .tittle3 .stick .second-anim, .category .tittle4 .stick .second-anim, .category .tittle5 .stick .second-anim {
+  position: absolute;
+  width: 0;
+  height: 5px;
+  right: -210%;
+  -webkit-transition: right 0.8s;
+  transition: right 0.8s;
+}
+
+.category .tittle1 .stick .last-anim, .category .tittle2 .stick .last-anim, .category .tittle3 .stick .last-anim, .category .tittle4 .stick .last-anim, .category .tittle5 .stick .last-anim {
+  position: absolute;
+  width: 0;
+  height: 5px;
+  right: -105%;
+}
+
+.category .tittle1:hover .stick .last-anim, .category .tittle2:hover .stick .last-anim {
+  border-left: 80px solid transparent;
+}
+
+.category .tittle1 .stick .first-anim, .category .tittle2 .stick .first-anim {
+  border-left: 80px solid #ecf0f1;
+}
+
+.category .tittle1 .stick .second-anim, .category .tittle2 .stick .second-anim {
+  border-left: 80px solid #ecf0f1;
+}
+
+.category .tittle1 .stick .last-anim, .category .tittle2 .stick .last-anim {
+  border-left: 80px solid #34495e;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+.category .tittle3 {
+  overflow: none;
+}
+
+.category .tittle3:hover .stick .last-anim {
+  border-left: 80px solid transparent;
+}
+
+.category .tittle3 .stick .first-anim {
+  border-left: 160px solid #ecf0f1;
+}
+
+.category .tittle3 .stick .second-anim {
+  border-left: 160px solid #ecf0f1;
+}
+
+.category .tittle3 .stick .last-anim {
+  border-left: 160px solid #34495e;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+.category .tittle4 {
+  overflow: none;
+}
+
+.category .tittle4:hover .stick .last-anim {
+  border-left: 75px solid transparent;
+}
+
+.category .tittle4 .stick .first-anim {
+  border-left: 75px solid #ecf0f1;
+}
+
+.category .tittle4 .stick .second-anim {
+  border-left: 75px solid #ecf0f1;
+}
+
+.category .tittle4 .stick .last-anim {
+  border-left: 75px solid #34495e;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+/*# sourceMappingURL=style.css.map */
